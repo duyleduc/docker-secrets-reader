@@ -16,17 +16,17 @@ The Docker Secrets Reader is a lightweight Node.js module designed to simplify t
 3. **Environment Variable Support:** Provides support for accessing Docker secrets through environment variables, allowing developers to easily inject secrets into their applications.
 
 **Usage:**
+Created your docker secret for a docker swarm 
+```shell
+printf "mysql_username" | docker secret create mysql_username - 
+printf "mysql_password" | docker secret create mysql_password -
+```
+
 ```javascript
-const DockerSecretReader = require('docker-secret-reader');
+import {secrets} from 'docker-secrets-reader';
 
-// Initialize the DockerSecretReader instance
-const secretReader = new DockerSecretReader();
-
-// Read a Docker secret
-const mySecret = secretReader.readSecret('my_secret_name');
-
-// Use the secret in your application
-console.log('My secret:', mySecret);
+console.log(secrets.mysql_username);
+# mysql_username
 ```
 
 **Installation:**

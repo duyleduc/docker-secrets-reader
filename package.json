@@ -5,10 +5,19 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "build": "tsc",
+    "build": "tsc", 
     "release": "release-it"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/duyleduc/docker-secrets-reader.git"
+  },
+  "keywords": [
+    "docker",
+    "docker swarm",
+    "secrets"
+  ],
+  "author": "Duye LE <duy@anttek.com>",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.24.4",

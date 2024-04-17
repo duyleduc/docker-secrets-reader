@@ -58,3 +58,8 @@ export function getSecret(secretName: string, defaultValue?: any): any {
         return process.env[`${secretName}`] || defaultValue;
     }
 }
+
+/**
+ * Default secrets
+ */
+export const secrets = getSecrets();
