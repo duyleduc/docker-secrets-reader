@@ -1,6 +1,6 @@
 {
   "name": "docker-secrets-reader",
-  "version": "0.0.1-SNAPSHOT.6",
+  "version": "1.0.0",
   "description": "The Docker Secret Reader is a lightweight Node.js module designed to simplify the process of accessing Docker secrets within Docker containers. Docker secrets are sensitive data such as passwords, API keys, and other confidential information stored securely within Docker Swarm or Docker Compose",
   "scripts": {
     "test": "jest",
