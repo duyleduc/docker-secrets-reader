@@ -56,10 +56,10 @@ export function getSecret(secretName: string | undefined, defaultValue?: any): a
         } catch (err) {
             // If reading from file fails, fallback to environment variable
             // If environment variable is not set, fallback to defaultValue
-            return process.env[`${secretName}`] || defaultValue;
+            return secretName || defaultValue;
         }
     } else {
-        return process.env[`${secretName}`] || defaultValue;
+        return defaultValue;
     }
 }
 
