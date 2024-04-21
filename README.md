@@ -77,7 +77,7 @@ This function returns in the order:
 import {getSecret} from "docker-secrets-reader";
 
 const secret = getSecret(process.env.SECRET); 
-const secretWithDefaultValue = getSecet(process.env.SECRET, "default_value");
+const secretWithDefaultValue = getSecret(process.env.SECRET, "default_value");
 ```
 
 **Compatibility:**
