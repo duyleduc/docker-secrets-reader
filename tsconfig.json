@@ -5,7 +5,12 @@
         "target": "es6",
         "moduleResolution": "node",
         "sourceMap": true,
-        "outDir": "dist"
+        "outDir": "dist",
+        "strictNullChecks": false,
+        "strictFunctionTypes": false,
+        "strictPropertyInitialization": false,
+        "noImplicitAny": false,
+        "strict": false
     },
     "lib": [
         "es2015"
