@@ -47,7 +47,7 @@ export function getSecrets<T extends Secrets = Secrets>(secretsDir?: string): T 
  * @param defaultValue An optional default value to return if the secret is not found.
  * @returns The value of the secret if found, or the defaultValue if provided, otherwise undefined.
  */
-export function getSecret(secretName: string, defaultValue?: any): any {
+export function getSecret(secretName: string | undefined, defaultValue?: any): any {
     try {
         // Attempt to read the secret from a file
         const secretValue = readFileSync(path.join(secretName), 'utf8').trim();
